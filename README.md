@@ -49,3 +49,7 @@ npm run build
 ## License
 
 This project is licensed under the ISC License. 
+
+## Used API
+
+This project uses the [Overfast API](https://overfast-api.tekrop.fr/docs) to retrieve hero data for Overwatch. 
