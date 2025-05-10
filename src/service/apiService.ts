@@ -27,9 +27,9 @@ export async function fetchHeroData(key: HeroKey): Promise<HeroData> {
  * @throws フェッチ操作が失敗した場合にエラーをスローします。
  */
 export async function getHeroKey(user_input: string): Promise<HeroKey> {
-  const url = isJapanese(user_input)
-    ? "https://overfast-api.tekrop.fr/heroes?locale=ja-jp"
-    : "https://overfast-api.tekrop.fr/heroes?locale=en-us";
+  const url = `https://overfast-api.tekrop.fr/heroes${
+    isJapanese(user_input) ? "?locale=ja-jp" : "?locale=en-us"
+  }`;
 
   const response = await fetch(url);
   const heroes = (await response.json()) as {
@@ -37,7 +37,9 @@ export async function getHeroKey(user_input: string): Promise<HeroKey> {
     name: string;
   }[];
 
-  const hero = heroes.find((hero) => hero.name === user_input);
+  const hero = heroes.find(
+    (hero) => hero.name.toLowerCase() === user_input.toLowerCase()
+  );
   if (!hero) {
     throw new Error(`ヒーローが見つかりません: ${user_input}`);
   }
