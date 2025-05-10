@@ -1,0 +1,32 @@
+{
+  "name": "overwatch2-mcp-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "overwatch2-mcp-server": "./build/main.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.1",
+    "@types/express": "^5.0.1",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "openapi-typescript": "^7.7.1",
+    "typescript": "^5.8.3"
+  }
+}
