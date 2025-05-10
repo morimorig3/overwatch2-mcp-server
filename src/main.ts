@@ -5,7 +5,7 @@ import { fetchHeroData, getHeroes, getHeroKey } from "./service/apiService.js";
 
 // MCPサーバーの作成
 const server = new McpServer({
-  name: "Overwatch Hero Server",
+  name: "Overwatch2 MCP Server",
   version: "1.0.0",
 });
 

@@ -5,8 +5,8 @@
 
 ## Provided Tools
 
-- `get_heroes`: Retrieves a list of heroes.
-- `get_hero`: Retrieves detailed information about a hero.
+- `get_heroes`: Get a list of heroes.
+- `get_hero`: Get detailed information about a hero.
 
 ## Installation
 
