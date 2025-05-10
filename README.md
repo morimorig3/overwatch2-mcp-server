@@ -1,16 +1,16 @@
 # Overwatch2 MCP Server
 
-## 概要
-`overwatch2-mcp-server`は、オーバーウォッチのヒーローデータを提供するMCPサーバーです。このサーバーは、ヒーローの一覧を取得したり、特定のヒーローの詳細情報を取得するためのツールを提供します。
+## Overview
+`overwatch2-mcp-server` is an MCP server that provides hero data for Overwatch. This server offers tools to retrieve a list of heroes and obtain detailed information about specific heroes.
 
-## 提供しているツール
+## Provided Tools
 
-- `get_heroes`: ヒーローの一覧を取得します。
-- `get_hero`: ヒーローの詳細情報を取得します。
+- `get_heroes`: Retrieves a list of heroes.
+- `get_hero`: Retrieves detailed information about a hero.
 
-## インストール
+## Installation
 
-このプロジェクトをクローンし、依存関係をインストールします。
+Clone this project and install the dependencies.
 
 ```bash
 git clone https://github.com/morimorig3/overwatch2-mcp-server
@@ -18,15 +18,15 @@ cd overwatch2-mcp-server
 npm install
 ```
 
-## 使用方法
+## Usage
 
-### ビルド
+### Build
 
 ```bash
 npm run build
 ```
 
-### mcpサーバーの登録
+### Registering the MCP Server
 
 ```
 {
@@ -39,14 +39,13 @@ npm run build
     }
   }
 }
-
 ```
 
-## 開発用依存関係
+## Development Dependencies
 
-- `typescript`: TypeScriptのコンパイラ。
-- `openapi-typescript`: OpenAPI仕様からTypeScript型を生成。
+- `typescript`: TypeScript compiler.
+- `openapi-typescript`: Generates TypeScript types from OpenAPI specifications.
 
-## ライセンス
+## License
 
-このプロジェクトはISCライセンスの下で公開されています。
+This project is licensed under the ISC License. 
